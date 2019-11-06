@@ -4,6 +4,7 @@
 
 Identifying commercial centers in a city, Visakhapatnam here, given point of interest (POI) data. Point of Interest data is collected from Open Street Maps using `OverPy`, a python wrapper for `OverPass API` and interactive visualization is performed using `folium`.
 
+Detailed analysis is performed and can be viewed in the [`jupyter-notebook`](POI_clustering_for_commercial_centers.ipynb).
 
 ## Data
 
@@ -13,8 +14,6 @@ Using OverPy, first collected amenities such as restaurants, complexes, malls, h
 
 <p align="center"> <img src="graphs/map_heatmap.png"/> </p>
 From the graph above we can understand that the areas with dense-ly clustered points are more developed and has many amenities as compared to areas with far away points. There areas might be underdeveloped or there may be natural areas such as mountains or lakes.
-
-Detailed analysis is performed and can be viewed in the [`jupyter-notebook`](POI_clustering_for_commercial_centers.ipynb)
 
 ## Results
 To identify the commercial centers, clustering was performed.
@@ -28,7 +27,7 @@ DBSCAN has identified 6 clusters from the entire data.
 
 ### K-Means Clustering
 
-Clustering directly in K-Means can lead to improper clustering if we don't know the exact number of clusters. Therefore finding the correct number of clusters is important. This is done using `Elbow-method` and `Silhouette Score Analysis` (detailed analysis in `jupyter-notebook`). Following is the final result.
+Clustering directly in K-Means can lead to improper clustering if we don't know the exact number of clusters. Therefore finding the correct number of clusters is important. This is done using `Elbow-method` and `Silhouette Score Analysis` (detailed analysis in [`jupyter-notebook`](POI_clustering_for_commercial_centers.ipynb)). Following is the final result.
 
 <p align="center"> <img src="graphs/map_kmeans_clustering.png"/> </p>
 
