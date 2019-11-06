@@ -14,7 +14,9 @@ Using OverPy, first collected amenities such as restaurants, complexes, malls, h
 <p align="center"> <img src="graphs/map_heatmap.png"/> </p>
 From the graph above we can understand that the areas with dense-ly clustered points are more developed and has many amenities as compared to areas with far away points. There areas might be underdeveloped or there may be natural areas such as mountains or lakes.
 
-## Clustering
+Detailed analysis is performed and can be viewed in the [`jupyter-notebook`](POI_clustering_for_commercial_centers.ipynb)
+
+## Results
 To identify the commercial centers, clustering was performed.
 
 ### Density Based Spatial Clustering of Application with Noise (DBSCAN)
